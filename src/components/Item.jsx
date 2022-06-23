@@ -13,6 +13,7 @@ export const Item = ({peli, title, poster_path, overview, vote_average}) => {
         <img src={`https://image.tmdb.org/t/p/w300/${peli.poster_path}`}  alt={title} />
       </div>
       <div className="pelipopu__overview">
+        <h3>Resumen:</h3>
         <p>{peli.overview}</p>
       </div>
     </div>

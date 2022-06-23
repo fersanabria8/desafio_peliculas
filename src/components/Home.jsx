@@ -48,12 +48,18 @@ export const Home = () => {
               pelicula.map(bus => (
                 <div className='item-container'>
                   <div className='item-titulo'>
-                    <p>{bus.title}</p>
+                    <h3>{bus.title}</h3>
                     <p>{bus.vote_average}</p>
                   </div>
                 <li key={bus.id}>
-                  <img src={`https://image.tmdb.org/t/p/w300/${bus.poster_path}`} alt={bus.title} />
+                  <div className='item-img'>
+                    <img src={`https://image.tmdb.org/t/p/w300/${bus.poster_path}`} alt={bus.title} />
+                  </div>
                 </li>
+                <div className='item_overview'>
+                  <h3>Resumen:</h3>
+                  <p>{bus.overview}</p>
+                </div>
                 </div>
               ))
             }
