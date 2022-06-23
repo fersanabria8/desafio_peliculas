@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { ItemList } from './ItemList';
 
-
 export const Populares = () => {
 
   const [populares, setPopulares]=useState([])
@@ -9,16 +8,13 @@ export const Populares = () => {
 
   const urlpopulares = 'https://api.themoviedb.org/3/movie/popular?api_key=b4b97eab5b971833d349d799c1366215&language=en-US&page=1';
 
-  // const IMG_POPU = 'https://image.tmdb.org/t/p/w300';
-
   const getPopulares = async () => {
-    
     const data = await fetch(urlpopulares);
     const peliPopulares = await data.json();
     setTimeout(() => {
-    console.log(peliPopulares);
-    setPopulares(peliPopulares.results)
-    setCargando(false)
+      console.log(peliPopulares);
+      setPopulares(peliPopulares.results)
+      setCargando(false)
   }, 2000);
   }
 

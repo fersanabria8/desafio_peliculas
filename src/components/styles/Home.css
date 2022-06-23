@@ -52,7 +52,7 @@ input{
 }
 
 .item-container{
-  width: 320px;
+  width: 300px;
   background-color: black;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
   overflow: hidden;
@@ -112,7 +112,7 @@ i{
   transition: color 0.5s;
 }
 .item_overview{
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   color: black;
   padding: 16px;

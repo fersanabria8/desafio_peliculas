@@ -4,16 +4,20 @@
   justify-content: space-between;
   cursor: pointer;
   text-transform: uppercase;
+  height: 80px;
 }
 .header a{
   text-decoration: none;
   color: white;
 }
 .logo{
-  padding-left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
-.logo h3:hover{
+.logo h2:hover{
   color: firebrick;
 }
 
