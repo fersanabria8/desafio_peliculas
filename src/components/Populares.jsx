@@ -12,14 +12,14 @@ export const Populares = () => {
   // const IMG_POPU = 'https://image.tmdb.org/t/p/w300';
 
   const getPopulares = async () => {
+    
     const data = await fetch(urlpopulares);
     const peliPopulares = await data.json();
+    setTimeout(() => {
     console.log(peliPopulares);
     setPopulares(peliPopulares.results)
-    // .catch(err => console.log(err))
-    // .finally(() => setCargando(false))
     setCargando(false)
-
+  }, 2000);
   }
 
   useEffect(() => {
@@ -28,7 +28,7 @@ export const Populares = () => {
 
   return (
     <>
-        <h3>Peliculas Populares</h3>
+        <h2>Peliculas Populares</h2>
       {cargando ? 
         <h2>Cargando..</h2> : 
 
