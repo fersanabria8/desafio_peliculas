@@ -12,8 +12,8 @@ export const NavBar = () => {
       <div className='nav'>
         <ul className='nav-list'>
         <Link to='/populares'><li>Peliculas populares</li></Link>  
-          <li>Registrarse</li>
-          <li>Iniciar</li>
+          {/* <li>Registrarse</li> */}
+          {/* <li>Iniciar</li> */}
         </ul>
       </div>
     </div>

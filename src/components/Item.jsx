@@ -1,10 +1,12 @@
 import React from 'react'
+import { StarRating } from './StartRating'
 import './styles/Item.css'
 
 export const Item = ({peli, title, poster_path, overview, vote_average}) => {
 
   return (
     <div className='pelipopu__container'>
+        <StarRating />
       <div className='pelipopu__titulo'>
         <h3>{peli.title}</h3>
         <p>{peli.vote_average}</p>

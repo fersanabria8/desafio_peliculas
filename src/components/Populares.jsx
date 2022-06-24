@@ -29,7 +29,6 @@ export const Populares = () => {
         <h2>Cargando..</h2> : 
 
         <ItemList peliPo={populares} />
-    
       }
     </>
   )

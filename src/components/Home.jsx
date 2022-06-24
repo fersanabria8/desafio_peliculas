@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { StarRating } from './StartRating';
 import './styles/Home.css';
 
 export const Home = () => {
@@ -47,6 +48,7 @@ export const Home = () => {
             {
               pelicula.map(bus => (
                 <div className='item-container'>
+                  <StarRating />
                   <div className='item-titulo'>
                     <h3>{bus.title}</h3>
                     <p>{bus.vote_average}</p>
