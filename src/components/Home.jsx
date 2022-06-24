@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { StarRating } from './StartRating';
+import { StarRating } from './StarRating';
 import './styles/Home.css';
 
 export const Home = () => {
